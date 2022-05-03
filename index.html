@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search - Suraj Prajapati</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <div class="header">Search Your Favorite Movies</div>
+    <section class="search">
+		<div class="search_bar">
+			<input
+			type="text"
+			name="search"
+			id="query"
+			placeholder="Search movies"
+			/>
+		</div>
+		<div class="search_btn">
+			<button type="button" id="search_btn">Search</button>
+		</div>
+    </section>
+    <section class="noresult dnd" id="noresult">
+		<div class="msg">Oops! No movies found</div>
+    </section>
+
+	<section class="result" id="result">
+		<div class="result_wrapper">
+			<div class="header">Search Results</div>
+			<div class="movies" id="movies"></div>
+		</div>
+	</section>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
+
